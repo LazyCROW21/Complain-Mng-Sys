@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="mx-auto my-2 border rounded p-3" style="max-width: 720px">
+            <h1>Register your complain here..</h1>
+            <hr />
+            <form id="c-form">
+                <div class="mb-3">
+                    <label for="nameinp" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="nameinp" placeholder="name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="emailinp" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailinp"
+                        placeholder="name@example.com" required />
+                </div>
+                <div class="mb-3">
+                    <label for="addresslineinp" class="form-label">Address Line</label>
+                    <input type="text" class="form-control" id="addresslineinp" placeholder="23-B street ABC"
+                        required />
+                </div>
+                <div class="mb-3">
+                    <label for="cityinp" class="form-label">City</label>
+                    <input type="text" class="form-control" id="cityinp" placeholder="York New City" required />
+                </div>
+                <div class="mb-3">
+                    <label for="stateinp" class="form-label">State</label>
+                    <input type="text" class="form-control" id="stateinp" placeholder="State" required />
+                </div>
+                <div class="mb-3">
+                    <label for="descriptioninp" class="form-label">Describe your problem</label>
+                    <textarea class="form-control" id="descriptioninp" rows="3" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
