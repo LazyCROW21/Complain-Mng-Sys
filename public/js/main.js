@@ -5,6 +5,7 @@ const addresslineInp = document.getElementById('addresslineinp')
 const cityInp = document.getElementById('cityinp')
 const stateInp = document.getElementById('stateinp')
 const descriptionInp = document.getElementById('descriptioninp')
+const submitBtn = document.getElementById('submit-btn')
 
 const clearForm = () => {
     nameInp.value = ''
@@ -28,7 +29,7 @@ const getFormData = () => {
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault()
-
+    submitBtn.disabled = true
     const url = 'http://localhost:3000/api/complains'
     const response = await fetch(url, {
         method: 'POST',
@@ -46,4 +47,5 @@ form.addEventListener('submit', async (e) => {
     } else {
         alert('Some error occurred, try again later!')
     }
+    submitBtn.disabled = false
 })
